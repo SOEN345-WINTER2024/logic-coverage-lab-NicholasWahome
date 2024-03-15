@@ -1,16 +1,21 @@
 public class CheckIt
 {
 
-   public static void checkIt (boolean a, boolean b, boolean c)
-   {  
+   public static boolean checkIt (boolean a, boolean b, boolean c)
+   {
+      boolean p = false;
+
       if (a || (b && c))
       {
          System.out.println ("P is true");
+         p = true;
       }
       else
       {
          System.out.println ("P isn't true");
+         p = false;
       }
+      return p;
    }
    
    public static void main (String []argv)
